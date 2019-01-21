@@ -13,7 +13,7 @@ class TestScreen2 extends Component {
       <SafeAreaView style={container}>
         <View style={bgView}>
           <Header headerText="Test2" hideRightIcon />
-          <Text>Poop 222222</Text>
+          <Text>Testing 2</Text>
         </View>
       </SafeAreaView>
     )
