@@ -1,12 +1,12 @@
 export default [
   {
-    name: "Test1",
-    navigateTo: "TestScreen1",
+    name: "testScreen1",
+    navigateTo: "testScreen1",
     type: "screen",
   },
   {
-    name: "Test2",
-    navigateTo: "TestScreen2",
+    name: "testScreen2",
+    navigateTo: "testScreen2",
     type: "screen",
   },
 ]

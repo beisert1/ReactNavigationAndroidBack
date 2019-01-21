@@ -16,7 +16,7 @@ class Tabs extends Component {
   nav(tab) {
     const { navigate } = this.props.navigation
 
-    console.log(tab)
+    navigate(tab.navigateTo)
   }
 
   render() {

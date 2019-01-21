@@ -25,7 +25,7 @@ class TestScreen1 extends Component {
     return (
       <SafeAreaView style={container}>
         <View style={bgView}>
-          <Header headerText="Test1" hideRightIcon />
+          <Header headerText="testScreen1" hideRightIcon />
           <Text>Testing 1</Text>
         </View>
       </SafeAreaView>

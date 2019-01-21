@@ -1,11 +1,11 @@
 export default [
   {
-    name: "Test1",
+    name: "testScreen1",
     icon: "home",
     navigateTo: "testScreen1",
   },
   {
-    name: "Test2",
+    name: "testScreen2",
     icon: "flag",
     navigateTo: "testScreen2",
   },
