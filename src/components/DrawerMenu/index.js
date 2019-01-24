@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { View, Text, Modal, TouchableOpacity } from "react-native"
+import { View, Text, Modal, TouchableOpacity, BackHandler } from "react-native"
 import { DrawerActions } from "react-navigation"
 
 import Header from "../Header"
@@ -11,6 +11,19 @@ class DrawerMenu extends Component {
     modalVisible: false,
     url: "",
     title: "",
+  }
+
+  componentWillMount() {
+    BackHandler.addEventListener("hardwareBackPress", this.handleBackPress)
+  }
+
+  componentWillUnmount() {
+    BackHandler.removeEventListener("hardwareBackPress", this.handleBackPress)
+  }
+
+  handleBackPress = () => {
+    this.props.navigation.dispatch(DrawerActions.closeDrawer())
+    return true
   }
 
   onPressItem = (navigateTo, type, name, id) => () => {
