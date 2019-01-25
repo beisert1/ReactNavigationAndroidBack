@@ -4,6 +4,7 @@ import { createBottomTabNavigator, createSwitchNavigator, createStackNavigator, 
 import Drawer from "../components/DrawerMenu"
 import Tabs from "../components/Tabs"
 
+import LoadingScreen from "../screens/loading"
 import TestScreen1 from "../screens/TestScreen1"
 import TestScreen2 from "../screens/TestScreen2"
 
@@ -26,6 +27,13 @@ const AppStack = createBottomTabNavigator(
   },
 )
 
+const LoadingStack = createStackNavigator(
+  {
+    LoadingScreen,
+  },
+  { headerMode: "none" },
+)
+
 const DrawerMenu = createDrawerNavigator(
   { Drawer: { screen: AppStack } },
   {
@@ -36,6 +44,7 @@ const DrawerMenu = createDrawerNavigator(
 )
 
 const App = createSwitchNavigator({
+  Loading: LoadingStack,
   App: DrawerMenu,
 })
 

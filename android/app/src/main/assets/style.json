@@ -1,0 +1,38 @@
+{
+    "version": 8,
+    "name": "MYS",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template",
+        "mapbox:sdk-support": {
+            "js": "0.45.0",
+            "android": "6.0.0",
+            "ios": "4.0.0"
+        }
+    },
+    "center": [
+        0,
+        -1.1368683772161603e-13
+    ],
+    "zoom": 0.8548682698930508,
+    "bearing": 0,
+    "pitch": 0,
+    "sources": {},
+    "glyphs": "asset://fonts/Open Sans Regular/{range}.pbf",
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": "hsl(0, 100%, 100%)",
+                "background-opacity": 1
+            }
+        }
+    ],
+    "created": "2018-05-23T20:31:04.664Z",
+    "id": "cjhjkcsou06m22rqy2ug26urq",
+    "modified": "2018-05-23T20:31:42.120Z",
+    "owner": "tholhubner",
+    "visibility": "private",
+    "draft": false
+}

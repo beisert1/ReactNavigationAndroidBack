@@ -3,10 +3,18 @@ package com.androidbackbutton;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.apsl.versionnumber.RNVersionNumberPackage;
+import com.rnrestartandroid.RNRestartAndroidPackage;
+import com.avishayil.rnrestart.ReactNativeRestartPackage;
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
+import io.realm.react.RealmReactPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.rnfs.RNFSPackage;
+import org.pgsqlite.SQLitePluginPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -22,7 +30,15 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+          new MainReactPackage(),
+            new RNVersionNumberPackage(),
+            new RNRestartAndroidPackage(),
+            new ReactNativeRestartPackage(),
+            new ReactNativePushNotificationPackage(),
+            new RealmReactPackage(),
+            new SplashScreenReactPackage(),
+            new RNFSPackage(),
+            new SQLitePluginPackage()
       );
     }
 
